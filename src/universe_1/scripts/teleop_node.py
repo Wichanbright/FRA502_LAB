@@ -11,7 +11,7 @@ HELP = """
 a   s   d
   space
 -----------
-w/s เดินหน้า/ถอยหลัง | a/d เลี้ยว | space หยุด | i วางพิซซ่า | q ออก | c clear 
+w/s เดินหน้า/ถอยหลัง | a/d เลี้ยว | space หยุด | i วางพิซซ่า | o บันทึก | q ออก | c clear 
 """
 
 def kbd_enter_cbreak():
