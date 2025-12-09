@@ -69,3 +69,4 @@ cd FRA502_LAB
 source install/setup.bash
 ros2 run lab2 turtlesim_pose.py
 ```
+# ให้ spawn เต่า killer โดยตั้งชื่อว่า  turtul2
