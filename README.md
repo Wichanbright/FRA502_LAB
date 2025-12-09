@@ -156,7 +156,7 @@ U1 | U2
 ### **ขั้นตอนที่ 1: โคลนโปรเจกต์จาก GitHub**
 
 ```bash
-git clone https://github.com/fibo-github-classroom/multiverse-mission-phu-bright.git
+git clone https://github.com/Wichanbright/FRA502_LAB.git
 ```
 
 * เมื่อ clone แล้วระบบจะถามหา **username** และ **password**
@@ -174,7 +174,7 @@ git clone https://github.com/fibo-github-classroom/multiverse-mission-phu-bright
 7. คัดลอก token ไว้ (แสดงครั้งเดียวเท่านั้น)
 
 > ใช้ token นี้แทน password เมื่อ Git ถามหา passwordbash
-> git clone [https://github.com/fibo-github-classroom/multiverse-mission-phu-bright.git](https://github.com/fibo-github-classroom/multiverse-mission-phu-bright.git)
+> git clone [https://github.com/Wichanbright/FRA502_LAB.git]
 
 
 
