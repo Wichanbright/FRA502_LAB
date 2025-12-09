@@ -124,7 +124,7 @@ def draw_polygon_alpha(surface, color, points):
     surface.blit(shape_surf, target_rect)
 class Scanner():
     # แก้วงscan
-    def __init__(self, radius:float=2.0,range:float=math.pi*2,color=(255,0,0,127)): 
+    def __init__(self, radius:float=1.0,range:float=math.pi*2,color=(255,0,0,127)): 
         self.radius = radius
         self.range = range # 
         self.detection_types = []
@@ -187,7 +187,7 @@ class TurtleEatInterface(PhysicsEntity,GraphicsEntity):
         PhysicsEntity.__init__(self,name=turtle.name)
         self.turtle = turtle
         #แก้วงeat
-        self.eat_range = Scanner(radius=1,range=math.pi*2,color=(0,255,0,127)) 
+        self.eat_range = Scanner(radius=0.5,range=math.pi*2,color=(0,255,0,127)) 
         self.eat_range.add_detection_type(Pizza)
         self.edibles = []
     def set_pose(self, pose: List[float]):
