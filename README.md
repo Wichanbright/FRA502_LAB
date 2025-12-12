@@ -15,7 +15,7 @@ git clone -b LAB4 https://github.com/Wichanbright/FRA502_LAB.git
 ```
 
 
-### **ขั้นตอนที่ 2: เข้าสู่ไดเร็กทอรีโปรเจกต์**
+### **ขั้นตอนที่ 2: เข้าสู่ไดเร็กทอรีโปรเจกต์**ต้องอยู่ในพาร์ท cd FRA502_LAB ทุก terminal
 ```bash
 cd FRA502_LAB
 ````
@@ -29,7 +29,7 @@ colcon build
 ```
 
 ### **ขั้นตอนที่ 4: เปิด Terminal 4 อัน**
-
+ต้องอยู่ในพาร์ท cd FRA502_LAB ทุก terminal
 * Terminal 1 → รัน launch file (rviz)
 * Terminal 2 → รัน robopub node
 * Terminal 3 → รัน service node
