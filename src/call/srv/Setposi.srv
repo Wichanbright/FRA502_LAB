@@ -1,0 +1,9 @@
+std_msgs/Float64 mode
+std_msgs/Float64 x
+std_msgs/Float64 y
+std_msgs/Float64 z
+std_msgs/Float64 vx
+std_msgs/Float64 vy
+std_msgs/Float64 vz
+---
+std_msgs/String aram

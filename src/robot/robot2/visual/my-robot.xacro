@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="example">
+
+    <link name="link_0">
+        <visual>
+            <geometry>
+                <mesh filename="package://robot/meshes/link_0.stl" />
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="link_1">
+        <visual>
+            <geometry>
+                <mesh filename="package://robot/meshes/link_1.stl" />
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name="joint_1" type="revolute">
+        <parent link="link_0"/>
+        <child link="link_1"/>
+        <origin xyz="0 0 0.2" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="${-3.1459}" upper="${3.1459}" velocity="1000" effort="1000"/>
+    </joint>
+    <link name="link_2">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://robot/meshes/link_2.stl" />
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name="joint_2" type="revolute">
+        <parent link="link_1"/>
+        <child link="link_2"/>
+        <origin xyz="0 -0.12 0" rpy="${-3.14/2} ${-3.14/2}  0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="${-3.1459}" upper="${3.1459}" velocity="1000" effort="1000"/>
+    </joint>
+
+    <link name="link_3">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://robot/meshes/link_3.stl" />
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name="joint_3" type="revolute">
+        <parent link="link_2"/>
+        <child link="link_3"/>
+        <origin xyz="0.25 0 0.1" rpy="0 0  0"/>
+        <axis xyz="0 0 1"/>
+    <limit lower="${-3.1459}" upper="${3.1459}" velocity="1000" effort="1000"/>
+    </joint>
+ 
+
+    <link name="end">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://robot/meshes/end_effector.stl" />
+            </geometry>
+        </visual>
+    </link>
+     <joint name="joint_end" type="fixed">
+        <parent link="link_3"/>
+        <child link="end"/>
+        <origin xyz="0.28 0 0" rpy="${3.14/2} 0  ${3.14/2}"/>
+     
+    </joint>
+    
+</robot>

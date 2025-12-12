@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(robot)
+project(joint)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -25,10 +25,11 @@ find_package(rclpy REQUIRED)                	# python (optional)
 # Install Python Module
 ament_python_install_package(${PROJECT_NAME})
 
-# Install Python executables
+# Install Python executabless
 install(PROGRAMS
   scripts/dummy_script.py
-  scripts/test.py
+  scripts/pubrobot.py
+  scripts/service.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -49,10 +50,6 @@ install(TARGETS
 ################ INSTALL LAUNCH, ETC #################
 install(DIRECTORY
   # add directories here
-  launch
-  meshes
-  config
-  robot2
   DESTINATION share/${PROJECT_NAME})
 
 ament_package()
