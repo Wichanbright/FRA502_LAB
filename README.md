@@ -63,7 +63,7 @@ source install/setup.bash
 จากนั้นรัน:
 
 ```bash
-ros2 run joint robotpub.py
+ros2 run joint pubrobot.py
 ```
 ### **ขั้นตอนที่ 7: รัน service node (Terminal 3)**
 
