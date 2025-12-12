@@ -28,7 +28,7 @@ cd FRA502_LAB
 colcon build
 ```
 
-### **ขั้นตอนที่ 4: เปิด Terminal 2 อัน**
+### **ขั้นตอนที่ 4: เปิด Terminal 4 อัน**
 
 * Terminal 1 → รัน launch file (rviz)
 * Terminal 2 → รัน robopub node
@@ -63,7 +63,7 @@ source install/setup.bash
 จากนั้นรัน:
 
 ```bash
-ros2 run joint robopub.py
+ros2 run joint robotpub.py
 ```
 ### **ขั้นตอนที่ 7: รัน service node (Terminal 3)**
 
